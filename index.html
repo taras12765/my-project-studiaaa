@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Music Studio - High-quality production of music and sound for clients">
+    <title>Music Studio</title>
+    <!-- Ссылка на файл стилей -->
+    <link rel="stylesheet" href="css/main.css">
+    <!-- Добавление шрифта Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Основной контейнер для хедера -->
+    <header class="container">
+        <span class="logo">RASTA</span>
+        <nav>
+            <ul>
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li> <!-- Переход на about.html -->
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">News</a></li>
+                <li class="btn"><a href="#">Contacts</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Блок с главным контентом hero -->
+    <div class="hero container">
+        <div class="hero--info">
+            <h2>Студія звукозапису РАСТА</h2>
+            <h1>Якщо хочеш записати крутий трек та не знаєш де? ти звернувся за адресою:)</h1>
+            <p>Ми зробимо все за тебе,потрібен лише твій не ідальний голос </p>
+            <!-- Кнопка с ссылкой -->
+            <a href="https://soundcloud.com/mcnikitaaa_tariiik/vecherok">
+                <button class="btn">Мої треки</button>
+            </a>
+        </div>
+
+        <!-- Контейнер для изображения -->
+        <div class="image-container">
+            <img src="img/IMAGE.svg" alt="Music Studio Image">
+        </div>
+    </div>
+
+    <div class="container trending">
+    <h3>Треки, які можна послухати на SoundCloud</h3>
+    <a href="https://soundcloud.com/mcnikitaaa_tariiik?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" class="see-all">SEE ALL</a>
+    <div class="games">
+        <div class="block">
+            <!-- Каждое изображение является ссылкой на трек SoundCloud -->
+            <a href="https://soundcloud.com/mcnikitaaa_tariiik/zachem-mc-nikitaaa-tariiik?in=ivoran-432937192/sets/daily-drops&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" target="_blank">
+                <img src="img/IMAGE1.svg" alt="Trending Music 1" style="width: 200px; height: auto;">
+            </a>
+            <a href="https://soundcloud.com/mcnikitaaa_tariiik/chego-dobilsya-ty?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" target="_blank">
+                <img src="img/IMAGE2.svg" alt="Trending Music 2" style="width: 200px; height: auto;">
+            </a>
+            <a href="https://soundcloud.com/mcnikitaaa_tariiik/vmeste?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" target="_blank">
+                <img src="img/IMAGE3.svg" alt="Trending Music 3" style="width: 185px; height: auto;">
+            </a>
+            <a href="https://soundcloud.com/mcnikitaaa_tariiik/18a1?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" target="_blank">
+                <img src="img/IMAGE4.svg" alt="Trending Music 4" style="width: 175px; height: auto;">
+            </a>
+        </div>
+    </div>
+</div>
+    
+    <div class="container email">
+        <h3>хочешь займатись теж?пиши нам</h3>
+        <p>Пиши сюда</p>
+        <div class="block">
+            <div>
+                <h4>Mи чекаємо кожного з вас </h4>
+                <p>Читайте всі наші пости та слідкуйте за нами в соцмережах</p>
+            </div>
+            <div>
+                <input type="email" id="emailField" placeholder="enter email address">
+                <button onclick="checkemail()">continue</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function checkemail() {
+            let email = document.querySelector('#emailField').value;
+            if (!email.includes('@')) alert('нет символа @');
+            else if (!email.includes('.')) alert('нет символа .');
+            else alert('Все чюдово!');
+        }
+    </script>
+</body>
+
+</html>
+<!-- HTML -->
+<div class="container">
+  
+  </div>
+  <!-- HTML -->
+<button onclick="window.location.href='https://t.me/tariiiiiiiiiiikk'">Телеграм</button>
+<!-- HTML -->
+<div class="navbar">
+    <div class="burger-menu" onclick="toggleMenu()">☰</div>
+    <ul id="menu" class="menu">
+      <li><a href="#">Головна</a></li>
+      <li><a href="#">Послуги</a></li>
+      <li><a href="#">Контакти</a></li>
+    </ul>
+  </div>

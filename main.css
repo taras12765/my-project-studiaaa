@@ -1,0 +1,324 @@
+/* Сброс стилей для всех элементов */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Рекомендуется добавлять box-sizing: border-box для лучшего контроля над размерами элементов */
+}
+
+/* Стили для body */
+body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    color: #fff;
+    background-color: #000; /* Добавление фона по умолчанию */
+}
+
+/* Стили для ссылок */
+a {
+    text-decoration: none;
+}
+
+/* Стили для изображений */
+img {
+    max-width: 100%;
+    height: auto; /* Это поможет сохранить пропорции изображений */
+}
+
+/* Стили для контейнера wrapper */
+.wrapper {
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(26,14,1,1) 100%);
+    width: 100%;
+    padding: 20px; /* Отступы внутри wrapper */
+}
+
+/* Контейнер */
+.container {
+    width: 100%;
+    max-width: 1400px; /* Ограничиваем максимальную ширину контейнера */
+    margin: 0 auto; /* Центрируем контейнер */
+    padding: 0 15px; /* Отступы слева и справа */
+}
+
+/* Стили для header */
+header {
+    padding: 50px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* Обеспечивает адаптивность */
+}
+
+header .logo {
+    text-transform: uppercase;
+    font-size: 29px;
+    font-weight: 800;
+}
+
+header nav {
+    width: auto;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+header nav ul li {
+    display: inline-block;
+}
+
+header nav ul li a {
+    color: #fff;
+    padding: 10px;
+}
+
+/* Стили для активного элемента и hover */
+header nav ul li:not(.active):not(.btn) a:hover {
+    border-bottom: 5px solid #DC7000; /* Эффект при наведении на обычные ссылки */
+}
+
+/* Кнопка "Contacts" */
+header nav ul li.btn a {
+    background: #FA9021;
+    padding: 9px 17px;
+    border-radius: 5px;
+    transition: all 500ms ease;
+}
+
+/* Эффект при наведении на кнопку */
+header nav ul li.btn a:hover {
+    background: #a02604;
+}
+
+/* Стили для hero */
+.hero {
+    display: flex; /* Flexbox для размещения текста и изображения рядом */
+    justify-content: space-between;
+    align-items: center; /* Вертикальное выравнивание */
+    color: #fff;
+    padding: 100px 0;
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4)),
+                url('img/hero-image.jpg') no-repeat center center;
+    background-size: cover;
+    position: relative;
+}
+
+.hero .hero--info {
+    width: 50%; /* Текстовая часть будет занимать половину ширины */
+    padding: 0 20px; /* Отступы внутри */
+    text-align: left; /* Выровнять текст по левому краю */
+}
+
+.hero .hero--info h1 {
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.hero .hero--info h2 {
+    color: #E87D0E;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 20px 0;
+}
+
+.hero .hero--info p {
+    font-weight: 500;
+    line-height: 170%;
+    margin: 30px 0;
+}
+
+.hero .hero--info .btn {
+    background: #FA8305;
+    color: #fff;
+    border-radius: 50px;
+    padding: 15px 30px;
+    border: 0;
+    transition: all 500ms ease;
+    font-size: 17px;
+}
+
+.hero .hero--info .btn:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+/* Стили для изображений внутри hero */
+.hero img {
+    max-width: 45%; /* Ограничиваем ширину картинки */
+    height: auto;
+    object-fit: cover; /* Подгоняет изображение в контейнер */
+    position: relative;
+}
+
+/* Адаптивность для мобильных устройств */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px 0;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    header nav ul li {
+        margin-bottom: 10px;
+    }
+
+    .hero {
+        flex-direction: column; /* Для мобильных экранов текст и изображение будут сверху вниз */
+        text-align: center;
+        padding-bottom: 50px; /* Уменьшаем отступ снизу для мобильных */
+    }
+
+    .hero .hero--info {
+        width: 90%; /* Уменьшаем ширину блока с текстом */
+        margin-bottom: 20px; /* Отступ снизу */
+    }
+
+    .hero img {
+        width: 80%; /* Уменьшаем размер картинки для мобильных */
+        margin-top: 20px;
+    }
+
+    .hero .hero--info h1 {
+        font-size: 36px;
+    }
+
+    .hero .hero--info h2 {
+        font-size: 24px;
+    }
+
+    .hero .hero--info p {
+        font-size: 16px;
+    }
+}
+/* Секция с играми */
+.trending {
+    padding-top: 50px ;
+}
+
+.trending h3 {
+font-weight: 600; 
+font-size: 31px;
+}
+.trending .see-all {
+ color: #fff;
+background: #25211D; 
+border-radius: 5px;
+padding: 12px 23px;
+float: right;
+display: block;
+}
+
+.big-text {
+    padding: 50px 0;
+    font-size: 35px;
+    font-weight: 600;
+    text-align: center;
+    width: 800px;
+}
+
+
+/*нижняя чясть */
+.email{
+    padding-bottom: 120px;
+}
+.email h3{
+    margin-top: 60px;
+    font-size: 35px;
+}
+.email .block {
+background: #1C140F;
+margin-top: 30px;
+border-radius: 10px;
+padding: 40px 3%;
+width: 94%;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.email .block h4 {
+    font-size: 30px;
+    font-weight: 500;
+
+}
+footer{
+    background: #000;
+    padding: 50px 0;
+}
+/* CSS */
+.container {
+    width: 100%;
+    padding: 20px;
+    background-color: lightgray;  /* стандартний фон */
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+      background-color: lightblue;  /* змінюється фон на мобільних пристроях */
+      padding: 10px;
+    }
+  }
+  /* CSS */
+button {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #2980b9;  /* змінюється колір фону при наведенні */
+  }
+  /* CSS */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px;
+  }
+  
+  .menu {
+    display: flex;
+    list-style: none;
+  }
+  
+  .menu li {
+    margin: 0 10px;
+  }
+  
+  .menu a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+  }
+  
+  .burger-menu {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+  }
+  
+  @media (max-width: 768px) {
+    .menu {
+      display: none;
+      flex-direction: column;
+    }
+  
+    .menu.active {
+      display: block;
+    }
+  
+    .burger-menu {
+      display: block;
+    }
+  }
+  
